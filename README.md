@@ -15,8 +15,17 @@ Este proyecto autommatiza la lectura de datos desde un archivo Excel y genera re
 - Pandas
 - OpenPyXL
 
-## Ejecución
+## Filtros disponibles
 
-1. Coloca tu archivo dentro de la carpeta 'data/'
-2. Ejecuta el script: cd src, python main.py
+Puedes ejecutar el script con los siguientes argumentos:
 
+| Opción      | Descripción                             | Ejemplo                          |
+|-------------|-----------------------------------------|----------------------------------|
+| `--region`  | Filtra por región                       | `--region Norte`                 |
+| `--desde`   | Fecha inicial (`YYYY-MM-DD`)            | `--desde 2025-08-01`             |
+| `--hasta`   | Fecha final (`YYYY-MM-DD`)              | `--hasta 2025-08-03`             |
+
+### Ejemplos de uso:
+
+python main.py --region Norte
+python main.py --desde 2025-08-01 --hasta 2025-08-03
